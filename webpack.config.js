@@ -9,7 +9,7 @@ module.exports = {
 
     output: {
         filename: 'bundle.js',
-        path: path.resolve(__dirname, 'public')
+        path: path.resolve(__dirname, 'public/js')
     },
 
     resolve: {
@@ -75,7 +75,7 @@ module.exports = {
                     {
                         loader: 'file-loader',
                         options: {
-                            name: './public/images/[name].[ext]',
+                            name: '../images/[name].[ext]',
                         }
                     },
                 ]
