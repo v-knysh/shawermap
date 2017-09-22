@@ -22,7 +22,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "webpack": "webpack --config webpack.config.js",
+    "webpack": "webpack --config webpack.config.js --progress --colors --watch",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },

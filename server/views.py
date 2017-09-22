@@ -1,6 +1,10 @@
+import os
+
 from aiohttp import web
 
 
 async def index(request):
-    # return web.Response(text='Hello Aiohttp!')
-    return web.Response(body='../public/index.html')
+    with open(os.path.join('public', 'index.html')) as f:
+        text = f.read()
+        return web.Response(text=text, content_type='html')
+

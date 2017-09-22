@@ -5,7 +5,7 @@ import './index.styl'
 class Footer extends React.Component {
     render() {
         return(
-            <div>
+            <div className="Footer">
                 <h1>
                     footer
                 </h1>
