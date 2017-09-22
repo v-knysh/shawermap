@@ -13,14 +13,12 @@ class App extends Component {
             <div className="App">
                 <Header/>
                 <div className="body">
-                    here be map
-                    {/*<GoogleMap/>*/}
+                    <GoogleMap/>
                 </div>
                 <Footer/>
             </div>
         );
     }
 }
-
 
 export default App;

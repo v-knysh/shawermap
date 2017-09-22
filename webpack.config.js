@@ -60,12 +60,12 @@ module.exports = {
                     },
                     {
                         loader: 'stylus-loader',
-                        // options: {
-                        //     import: [
-                        //         path.join(__dirname,
-                        //             'client/config/variables.styl'),
-                        //     ],
-                        // },
+                        options: {
+                            import: [
+                                path.join(__dirname,
+                                    'client/constants.styl'),
+                            ],
+                        },
                     },
                 ],
             },
