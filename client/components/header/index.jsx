@@ -6,9 +6,13 @@ export default class Header extends React.Component {
     render() {
         return(
             <div className="Header">
-                <h1>
-                    Shawarmap
-                </h1>
+                <button className="Hamburger_button">
+                    <img src="static/images/hamburger.svg" alt=""/>
+                </button>
+                <div className="Header_logo">
+                    <img src="static/images/shawarmap.png" alt=""/>
+                    <h1>Shawarmap</h1>
+                </div>
             </div>
         )
     }
