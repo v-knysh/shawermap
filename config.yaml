@@ -1,0 +1,10 @@
+SERVER:
+  HOST: 127.0.0.1
+  PORT: 8000
+
+DATABASE:
+  NAME: shawermap
+  HOST: 127.0.0.1
+  PORT: 5432
+  USER: postgres
+  PASSWORD: postgres
