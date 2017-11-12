@@ -1,8 +1,8 @@
 from aiohttp import web
-from routes import setup_routes
+from server.routes import setup_routes
 
-from config import get_config
-from db import init_db, close_db
+from server.config import get_config
+from server.db import init_db, close_db
 
 
 app = web.Application()

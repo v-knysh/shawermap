@@ -5,7 +5,7 @@ import yaml
 
 def get_config():
     try:
-        with open("config.yaml", 'r') as stream:
+        with open("../config.yaml", 'r') as stream:
             data = yaml.load(stream)
             return data
             # return validate_config(data)
