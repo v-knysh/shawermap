@@ -1,27 +1,39 @@
-initial:
+# Initial:
 
-install python3.6
+- install python3.6
+- install node 6.x+
 
-install python packages:
 
-pip install -r requirements.txt
+## install python packages:
+`pip install -r requirements.txt`
 
-install postgres
-add user from config.yaml
+## install node modules:
+`npm install`
+
+## install postgres
+- add user from config.yaml
 
 Migrate:
+```
 cd server/
 alembic upgrade head
+```
 
-run:
+# Run:
 
-Server:
+## Server:
+```
 server/main.py
+```
 
-webpack:
+## webpack:
+```
 npm run webpack --colors --watch
+```
 
-Generate migrations:
+## Generate migrations:
+```
 cd server/
 alembic revision --autogenerate -m "added point and user tables"
+```
 
